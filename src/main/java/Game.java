@@ -1,8 +1,9 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class Game {
 
-    ArrayList<Player> playerList = new ArrayList<>();
+    public List<Player> playerList = new ArrayList<>();
 
 
     public void isRegistered(Player player) {
