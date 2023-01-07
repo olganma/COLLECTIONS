@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Game {
 
-    public HashMap<String, Player> map = new HashMap<>();
+    private HashMap<String, Player> map = new HashMap<>();
 
 
     public void isRegistered(Player player) {
