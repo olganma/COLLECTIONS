@@ -1,13 +1,14 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class Game {
 
-    public List<Player> playerList = new ArrayList<>();
+    private HashMap<String, Player> map = new HashMap<>();
 
 
     public void isRegistered(Player player) {
-        playerList.add(player);
+        map.put(player.getName(), player);
     }
 
     public int round(String playerName1, String playerName2) {
@@ -24,12 +25,7 @@ public class Game {
     }
 
     public Player findByName(String name) {
-        for (Player player : playerList) {
-            if (player.getName() == name) {
-                return player;
-            }
-        }
-        return null;
+        return map.get(name);
     }
 
 }
