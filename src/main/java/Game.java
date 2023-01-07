@@ -25,12 +25,7 @@ public class Game {
     }
 
     public Player findByName(String name) {
-        for (String key : map.keySet()) {
-            if (map.get(key).getName() == name) {
-                return map.get(key);
-            }
-        }
-        return null;
+        return map.get(name);
     }
 
 }
