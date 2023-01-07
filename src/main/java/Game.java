@@ -3,7 +3,7 @@ import java.util.List;
 
 public class Game {
 
-    public List<Player> playerList = new ArrayList<>();
+    private List<Player> playerList = new ArrayList<>();
 
 
     public void isRegistered(Player player) {
@@ -25,7 +25,7 @@ public class Game {
 
     public Player findByName(String name) {
         for (Player player : playerList) {
-            if (player.getName() == name) {
+            if (player.getName().equals(name)) {
                 return player;
             }
         }
